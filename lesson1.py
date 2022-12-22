@@ -76,13 +76,13 @@
 #         print(next[i], end="")
 
 
-myDict = {"a":51, "b":15, "c":20,"d":5,"e":5}
+myDict = {"a":51, "b":15, "c":20,"d":5,"e":25}
 values = list(myDict.values())
 keys = myDict.keys()
 for j in keys:
     for i in values:
         if str(i)[0] == '5':
             del myDict[j]      
-        
+print(myDict)       
 
 
