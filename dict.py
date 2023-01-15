@@ -74,3 +74,14 @@ dict3 = dict(sorted(dict3.items(), key=lambda x:x[1]))
 print(dict3)
 
 
+dict1 = {"one": 1, "three":3, "five":5}
+dict2 = {"two":2, "fore":4, "six":6}
+dict3 = dict()
+
+list1 = list(dict1)
+list2 = list(dict2)
+for i in range(len(list1)):
+    dict3[list1[i]] = dict1[list1[i]]
+    dict3[list2[i]] = dict2[list2[i]]
+
+print(dict3)
